@@ -17,9 +17,7 @@ class gcc::params{
        $gcc_package = 'gcc'
     }
     'ubuntu', 'debian': {
-       if ! defined(Package['build-essential']) { 
 	$gcc_package = [ 'gcc', 'build-essential' ]
-	}
     }
   }
 }
